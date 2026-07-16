@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Base surfaces */
+  --color-parchment: #fbf6ec;
+  --color-ivory: #f6eedd;
+
+  /* Text */
+  --color-brown-heading: #4a3320;
+  --color-brown-secondary: #8a7052;
+
+  /* Accents — rotate across tags, buttons, highlights */
+  --color-fuchsia: #e85d75;
+  --color-majorelle: #2c6e8e;
+  --color-saffron: #e0972e;
+  --color-emerald: #3d8361;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-parchment);
+  color: var(--color-brown-heading);
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100svh;
+}
