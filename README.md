@@ -81,7 +81,17 @@ get committed.
    grid, item detail, create outfit, outfit gallery, profile/settings.
 2. **Phase 2** — AI auto-tagging in the add-item flow.
 3. **Phase 3** — space-planning tool + in-store shopping match.
-4. **Phase 4** — styling/body/skin-tone advice.
+4. **Phase 4** — styling advice: what flatters your silhouette, occasion, and
+   skin tone (warm/cool undertone), framed as empowering, never corrective;
+   plus jewelry recommendations by occasion and top/neckline shape,
+   especially for women. Most sensitive phase — build last, after real user
+   feedback, with warm language throughout ("colors that make you glow," not
+   clinical "your season is...").
+5. **Phase 5** — smart travel packing: given a trip's length and the
+   destination's weather (calendar + weather API), recommend what to pack
+   from the user's actual catalogued closet. Depends on Phase 1 (items to
+   pack) and Phase 2 (outfits to pack as complete looks), so it can't be
+   built or usefully tested before those exist.
 
 ## Design system
 
