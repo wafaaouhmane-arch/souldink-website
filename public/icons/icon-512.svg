@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#E85D75"/>
+  <rect width="512" height="512" fill="#A6395F"/>
   <g transform="translate(256,256)">
     <rect x="-138" y="-138" width="276" height="276" fill="#FBF6EC"/>
     <rect x="-138" y="-138" width="276" height="276" fill="#FBF6EC" transform="rotate(45)"/>

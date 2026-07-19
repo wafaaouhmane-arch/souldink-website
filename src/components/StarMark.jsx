@@ -3,7 +3,7 @@
  * signature mark. Use sparingly: loading states, section dividers. Not a
  * repeated decoration.
  */
-function StarMark({ size = 32, color = '#E85D75', className = '' }) {
+function StarMark({ size = 32, color = '#A6395F', className = '' }) {
   return (
     <svg
       width={size}

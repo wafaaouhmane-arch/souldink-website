@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import StarMark from '../components/StarMark.jsx'
 
 const CLOSET_SIZES = [
-  { value: 'small', label: 'Small', color: '#2C6E8E' },
-  { value: 'medium', label: 'Medium', color: '#E0972E' },
-  { value: 'large', label: 'Large', color: '#3D8361' },
+  { value: 'small', label: 'Small', color: '#1F5C78' },
+  { value: 'medium', label: 'Medium', color: '#B9760F' },
+  { value: 'large', label: 'Large', color: '#2E6B4C' },
 ]
 
 function Onboarding() {
@@ -30,11 +30,12 @@ function Onboarding() {
     <main className="flex min-h-svh flex-col items-center justify-center bg-parchment px-6 py-12">
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col items-center text-center">
-          <StarMark size={40} className="mb-4" />
-          <h1 className="font-serif text-3xl text-brown-heading">
+          <StarMark size={36} className="mb-4" />
+          <h1 className="font-serif text-4xl text-brown-heading">Doulabot</h1>
+          <p className="mt-2 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brown-secondary">
             Welcome to your Doulab
-          </h1>
-          <p className="mt-2 font-sans text-brown-secondary">
+          </p>
+          <p className="mt-4 font-sans text-brown-secondary">
             Let's get your wardrobe organized, one photo at a time.
           </p>
         </div>
@@ -66,11 +67,12 @@ function Onboarding() {
                     key={size.value}
                     type="button"
                     onClick={() => setClosetSize(size.value)}
-                    className="flex-1 rounded-xl border-2 px-3 py-3 font-sans text-sm font-medium transition-colors"
+                    className="flex-1 rounded-xl border px-3 py-3 font-sans text-sm font-medium transition-colors"
                     style={{
-                      borderColor: size.color,
-                      backgroundColor: selected ? size.color : 'transparent',
-                      color: selected ? '#FBF6EC' : size.color,
+                      borderColor: selected ? size.color : '#DDD0BA',
+                      borderWidth: selected ? '1.5px' : '1px',
+                      backgroundColor: selected ? `${size.color}17` : 'transparent',
+                      color: selected ? size.color : '#8A7052',
                     }}
                     aria-pressed={selected}
                   >
