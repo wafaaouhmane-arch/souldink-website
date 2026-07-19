@@ -1,8 +1,8 @@
 # Doulabot
 
 An AI-powered wardrobe organizer with a Moroccan cultural identity. This is
-the Phase 1 build: manual closet cataloging, starting with the onboarding
-screen.
+the Phase 1 build: manual closet cataloging — onboarding, adding items with a
+photo, browsing your closet grid, and viewing/deleting an item.
 
 ## What's in this project (plain-language tour)
 
@@ -15,18 +15,26 @@ does:
 - **`src/main.jsx`** — the entry point. It boots up React and wraps the app
   in a router (`BrowserRouter`), which is what lets the app have multiple
   "pages" (like `/` and `/closet`) without reloading the browser.
-- **`src/App.jsx`** — the map of pages. Right now it has two: the onboarding
-  screen (`/`) and a placeholder closet screen (`/closet`) you land on after
-  finishing onboarding.
-- **`src/pages/`** — one file per screen. `Onboarding.jsx` is the first
-  screen: it asks for a name and closet size, then saves that locally and
-  moves you to `/closet`.
+- **`src/App.jsx`** — the map of pages: onboarding (`/`), the closet grid
+  (`/closet`), adding an item (`/add-item`), and an item's detail view
+  (`/item/:id`).
+- **`src/pages/`** — one file per screen. `Onboarding.jsx` asks for a name
+  and closet size. `ClosetGrid.jsx` shows everything you've catalogued (or a
+  prompt to add your first item, if empty). `AddItem.jsx` is the photo +
+  tagging form. `ItemDetail.jsx` shows one item full-size with a delete
+  option.
 - **`src/components/`** — small reusable pieces. `StarMark.jsx` draws the
   eight-pointed Moroccan star used as Doulabot's signature mark.
+- **`src/lib/closetStore.js`** — where your closet items actually live right
+  now: the browser's IndexedDB (a built-in local database), not Supabase.
+  That means it works immediately with no account setup, but the data stays
+  on whichever device/browser you use — it won't sync anywhere until this
+  moves to Supabase in a later phase.
+- **`src/lib/constants.js`** — the shared lists of categories, seasons, and
+  occasions used in the add-item form and the closet grid's tags.
 - **`src/lib/supabaseClient.js`** — sets up the connection to Supabase (the
-  database/auth/storage service this app will use). It's wired up but not
-  used yet in Phase 1 — closet size and name are just saved in the browser
-  for now.
+  database/auth/storage service this app will eventually use for real
+  accounts and cross-device sync). Wired up but unused for now.
 - **`src/index.css`** — the design system: the parchment/ivory backgrounds,
   warm brown text colors, and the four accent colors (fuchsia, Majorelle
   blue, saffron, emerald), plus the two fonts. Every screen pulls its colors
