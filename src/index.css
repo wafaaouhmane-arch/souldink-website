@@ -9,11 +9,12 @@
   --color-brown-heading: #4a3320;
   --color-brown-secondary: #8a7052;
 
-  /* Accents — rotate across tags, buttons, highlights */
-  --color-fuchsia: #e85d75;
-  --color-majorelle: #2c6e8e;
-  --color-saffron: #e0972e;
-  --color-emerald: #3d8361;
+  /* Accents — rotate across tags, buttons, highlights. Deep, jewel-toned
+     versions rather than bright/flat ones, for a more editorial feel. */
+  --color-fuchsia: #a6395f;
+  --color-majorelle: #1f5c78;
+  --color-saffron: #b9760f;
+  --color-emerald: #2e6b4c;
 
   /* Typography */
   --font-serif: 'Playfair Display', 'Georgia', serif;

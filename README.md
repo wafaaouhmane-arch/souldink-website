@@ -88,8 +88,9 @@ get committed.
 - Backgrounds: parchment `#FBF6EC` / ivory `#F6EEDD` (60–70% of every
   screen).
 - Text: warm brown `#4A3320` (headings), `#8A7052` (secondary).
-- Accents (rotate across tags/buttons, never one dominant color): fuchsia
-  `#E85D75`, Majorelle blue `#2C6E8E`, saffron `#E0972E`, emerald `#3D8361`.
+- Accents (rotate across tags/buttons, never one dominant color): deep,
+  jewel-toned rather than flat/bright — fuchsia `#A6395F`, Majorelle blue
+  `#1F5C78`, saffron `#B9760F`, emerald `#2E6B4C`.
 - Serif (Playfair Display) for headings and item names; sans-serif (Inter)
   for functional UI.
 - Flat design — no gradients or drop shadows. The eight-pointed Moroccan
